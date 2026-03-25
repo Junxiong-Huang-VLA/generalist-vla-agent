@@ -1,0 +1,10 @@
+extends: eval_temporal.yaml
+policy:
+  backend: trained_temporal
+  backend_kwargs:
+    artifact_path: outputs/models/temporal_policy_from_split.json
+eval:
+  dataset_kind: synthetic_temporal
+  dataset_path: outputs/data/splits_temporal/test.jsonl
+  report_path: outputs/reports/eval_temporal_from_split.json
+  intent_hint_mode: weak

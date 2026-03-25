@@ -1,0 +1,6 @@
+extends: infer.yaml
+
+policy:
+  backend: trained_intent
+  backend_kwargs:
+    artifact_path: outputs/models/intent_policy.json

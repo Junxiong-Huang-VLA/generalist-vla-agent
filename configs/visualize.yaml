@@ -1,0 +1,9 @@
+extends: base.yaml
+
+runtime:
+  mode: visualize
+
+visualize:
+  reports_glob: outputs/reports/*.json
+  output_html: outputs/visuals/dashboard.html
+  output_markdown: outputs/visuals/leaderboard.md

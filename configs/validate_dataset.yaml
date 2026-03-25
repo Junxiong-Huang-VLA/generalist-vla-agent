@@ -1,0 +1,8 @@
+extends: base.yaml
+
+runtime:
+  mode: validate_dataset
+
+validate:
+  dataset_path: outputs/data/splits_temporal/train.jsonl
+  schema_mode: temporal

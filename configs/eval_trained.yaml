@@ -1,0 +1,11 @@
+extends: eval.yaml
+policy:
+  backend: trained_intent
+  backend_kwargs:
+    artifact_path: outputs/models/intent_policy.json
+eval:
+  dataset_kind: synthetic_intent
+  dataset: mock_eval_set
+  num_episodes: 40
+  report_path: outputs/reports/eval_trained_intent.json
+  intent_hint_mode: weak

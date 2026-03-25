@@ -1,0 +1,12 @@
+extends: eval_temporal.yaml
+
+policy:
+  backend: trained_temporal
+  backend_kwargs:
+    artifact_path: outputs/models/temporal_policy_calvin_small.json
+
+eval:
+  dataset_kind: synthetic_temporal
+  dataset_path: outputs/data/calvin_debug_small_splits/test.jsonl
+  intent_hint_mode: weak
+  report_path: outputs/reports/eval_temporal_calvin_small.json

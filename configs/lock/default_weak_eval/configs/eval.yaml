@@ -1,0 +1,12 @@
+extends: base.yaml
+runtime:
+  mode: eval
+policy:
+  backend: heuristic
+  backend_kwargs: {}
+eval:
+  dataset_kind: synthetic_intent
+  dataset: mock_eval_set
+  num_episodes: 40
+  report_path: outputs/reports/eval_heuristic.json
+  intent_hint_mode: weak

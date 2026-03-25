@@ -1,0 +1,16 @@
+project:
+  name: generalist-vla-agent
+  version: 0.1.0
+
+runtime:
+  device: cpu
+  seed: 42
+
+policy:
+  backend: heuristic
+  backend_kwargs: {}
+
+observation_defaults:
+  rgb: [0.2, 0.4, 0.8]
+  depth: [0.6, 0.7, 0.5]
+  text: "table scene with objects"

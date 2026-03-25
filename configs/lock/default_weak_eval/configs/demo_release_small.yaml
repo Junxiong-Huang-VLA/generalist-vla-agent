@@ -1,0 +1,20 @@
+extends: base.yaml
+
+runtime:
+  mode: demo_release_small
+
+demo:
+  steps:
+    - cmd: ["python", "scripts/prepare_calvin_dataset.py", "--config", "configs/calvin_prepare_small.yaml"]
+    - cmd: ["python", "scripts/train.py", "--config", "configs/train_temporal_calvin_small.yaml"]
+    - cmd: ["python", "scripts/eval.py", "--config", "configs/eval_temporal_calvin_small.yaml"]
+    - cmd: ["python", "scripts/visualize_results.py", "--config", "configs/visualize.yaml"]
+
+  train_report: outputs/reports/train_temporal_calvin_small_report.json
+  eval_reports:
+    - outputs/reports/eval_temporal_calvin_small.json
+    - outputs/reports/eval_temporal_calvin_debug.json
+    - outputs/reports/eval_temporal_from_split.json
+  leaderboard: outputs/visuals/leaderboard.md
+  dashboard: outputs/visuals/dashboard.html
+  summary_out: outputs/visuals/release_summary_small.md

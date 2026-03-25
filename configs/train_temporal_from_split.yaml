@@ -1,0 +1,10 @@
+extends: train_temporal.yaml
+
+train:
+  backend: trained_temporal
+  dataset_path: outputs/data/splits_temporal/train.jsonl
+  val_dataset_path: outputs/data/splits_temporal/val.jsonl
+  artifact_output: outputs/models/temporal_policy_from_split.json
+  report_output: outputs/reports/train_temporal_from_split_report.json
+  validate_schema: true
+  schema_mode: temporal

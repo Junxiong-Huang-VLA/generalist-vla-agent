@@ -1,0 +1,11 @@
+extends: calvin_prepare.yaml
+
+calvin_prepare:
+  dataset_dir: data/external/calvin/calvin_debug_dataset
+  schema_mode: temporal
+  output_dir: outputs/data/calvin_debug_small_splits
+  max_rows: 120
+  splits:
+    train: 0.8
+    val: 0.1
+    test: 0.1

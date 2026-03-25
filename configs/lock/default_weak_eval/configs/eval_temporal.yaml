@@ -1,0 +1,13 @@
+extends: base.yaml
+runtime:
+  mode: eval
+policy:
+  backend: trained_temporal
+  backend_kwargs:
+    artifact_path: outputs/models/temporal_policy.json
+eval:
+  dataset_kind: synthetic_temporal
+  dataset: mock_temporal_eval_set
+  num_episodes: 80
+  report_path: outputs/reports/eval_trained_temporal.json
+  intent_hint_mode: weak

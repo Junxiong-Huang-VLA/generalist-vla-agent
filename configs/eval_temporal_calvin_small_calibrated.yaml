@@ -1,0 +1,10 @@
+extends: eval_temporal_calvin_small.yaml
+postprocess:
+  enabled: true
+  mode: rule_based
+  enable_gripper_close_fix: true
+eval:
+  dataset_kind: synthetic_temporal
+  dataset_path: outputs/data/calvin_debug_small_splits/test.jsonl
+  report_path: outputs/reports/eval_temporal_calvin_small_calibrated.json
+  intent_hint_mode: weak

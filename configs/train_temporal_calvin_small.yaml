@@ -1,0 +1,10 @@
+extends: train_temporal.yaml
+
+train:
+  backend: trained_temporal
+  dataset_path: outputs/data/calvin_debug_small_splits/train.jsonl
+  val_dataset_path: outputs/data/calvin_debug_small_splits/val.jsonl
+  artifact_output: outputs/models/temporal_policy_calvin_small.json
+  report_output: outputs/reports/train_temporal_calvin_small_report.json
+  validate_schema: true
+  schema_mode: temporal

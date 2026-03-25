@@ -1,0 +1,11 @@
+extends: base.yaml
+
+runtime:
+  mode: infer
+
+policy:
+  backend: heuristic
+  backend_kwargs: {}
+
+inference:
+  instruction: "Pick up the red cup and place it on the tray."

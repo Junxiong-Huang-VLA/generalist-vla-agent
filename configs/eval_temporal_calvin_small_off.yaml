@@ -1,0 +1,7 @@
+extends: eval_temporal_calvin_small.yaml
+
+eval:
+  dataset_kind: synthetic_temporal
+  dataset_path: outputs/data/calvin_debug_small_splits/test.jsonl
+  intent_hint_mode: off
+  report_path: outputs/reports/eval_temporal_calvin_small_off.json

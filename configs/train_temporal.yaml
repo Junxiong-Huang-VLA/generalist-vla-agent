@@ -1,0 +1,13 @@
+extends: base.yaml
+
+runtime:
+  mode: train
+
+train:
+  backend: trained_temporal
+  num_samples: 256
+  dataset_output: outputs/data/train_temporal.jsonl
+  artifact_output: outputs/models/temporal_policy.json
+  report_output: outputs/reports/train_temporal_report.json
+  validate_schema: true
+  schema_mode: temporal

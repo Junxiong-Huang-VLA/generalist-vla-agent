@@ -1,0 +1,12 @@
+extends: infer.yaml
+
+policy:
+  backend: openvla_adapter
+  backend_kwargs:
+    checkpoint_path: ""
+    tokenizer_name: ""
+    device: cpu
+    dry_run_mock: true
+
+inference:
+  instruction: "Move to the blue marker near the wall."

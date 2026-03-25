@@ -1,0 +1,13 @@
+extends: base.yaml
+
+runtime:
+  mode: train
+
+train:
+  backend: trained_intent
+  num_samples: 128
+  dataset_output: outputs/data/train_intent.jsonl
+  artifact_output: outputs/models/intent_policy.json
+  report_output: outputs/reports/train_intent_report.json
+  validate_schema: true
+  schema_mode: intent

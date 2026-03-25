@@ -1,0 +1,13 @@
+extends: base.yaml
+
+runtime:
+  mode: data_prepare
+
+data:
+  dataset_kind: synthetic_temporal
+  num_samples: 500
+  output_dir: outputs/data/splits_temporal
+  splits:
+    train: 0.8
+    val: 0.1
+    test: 0.1

@@ -1,0 +1,10 @@
+extends: base.yaml
+
+runtime:
+  mode: calvin
+
+calvin:
+  root_dir: data/external/calvin
+  debug_dataset_dir: data/external/calvin/calvin_debug_dataset
+  d_zip_path: data/external/calvin/task_D_D.zip
+  d_expected_bytes: 177382499170

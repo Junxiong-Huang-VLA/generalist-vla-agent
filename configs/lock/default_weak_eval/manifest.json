@@ -1,0 +1,36 @@
+{
+  "created_at": "2026-03-25 13:16:25",
+  "root_dir": "D:\\generalist-vla-agent",
+  "files": [
+    {
+      "path": "configs/base.yaml",
+      "sha256": "c67bfae1dc338e210d00115e2241cfe9c46c15939c7d0aeb89db6f1a8bf30961",
+      "bytes": 247
+    },
+    {
+      "path": "configs/eval.yaml",
+      "sha256": "715e909783037feb878643546f75768b2f25c4766a92cc0da48990f177ab2474",
+      "bytes": 262
+    },
+    {
+      "path": "configs/eval_trained.yaml",
+      "sha256": "78d15828e69371894172ba39137def8de1e725dc43ccb5c51392d3c9511fce10",
+      "bytes": 299
+    },
+    {
+      "path": "configs/eval_temporal.yaml",
+      "sha256": "fcbdd6c352bf1194f9587d75b185cd46c9058d0d994857473355c949752db89b",
+      "bytes": 340
+    },
+    {
+      "path": "configs/eval_temporal_calvin_small.yaml",
+      "sha256": "1b1c6a539792d02d79092b377a595ea0ce3dcacaa0623bfc6a0ebe2ed92b3c65",
+      "bytes": 347
+    },
+    {
+      "path": "configs/demo_release_small.yaml",
+      "sha256": "549ad4a3551cbd81493a7ea00d09f23f0d709f837ba8b023a24dac3ad4583ceb",
+      "bytes": 861
+    }
+  ]
+}

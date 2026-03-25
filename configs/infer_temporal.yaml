@@ -1,0 +1,10 @@
+extends: infer.yaml
+
+policy:
+  backend: trained_temporal
+  backend_kwargs:
+    artifact_path: outputs/models/temporal_policy.json
+
+inference:
+  instruction: "Pick up the red cup and place it on the tray."
+  prev_action: "move_to_target"

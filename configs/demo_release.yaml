@@ -1,0 +1,23 @@
+extends: base.yaml
+
+runtime:
+  mode: demo_release
+
+demo:
+  steps:
+    - cmd: ["python", "scripts/prepare_data.py", "--config", "configs/data_prepare.yaml"]
+    - cmd: ["python", "scripts/validate_dataset.py", "--config", "configs/validate_dataset.yaml"]
+    - cmd: ["python", "scripts/train.py", "--config", "configs/train_temporal_from_split.yaml"]
+    - cmd: ["python", "scripts/eval.py", "--config", "configs/eval_temporal_from_split.yaml"]
+    - cmd: ["python", "scripts/eval.py", "--config", "configs/eval_trained.yaml"]
+    - cmd: ["python", "scripts/eval.py", "--config", "configs/eval_temporal.yaml"]
+    - cmd: ["python", "scripts/visualize_results.py", "--config", "configs/visualize.yaml"]
+
+  train_report: outputs/reports/train_temporal_from_split_report.json
+  eval_reports:
+    - outputs/reports/eval_temporal_from_split.json
+    - outputs/reports/eval_trained_intent.json
+    - outputs/reports/eval_trained_temporal.json
+  leaderboard: outputs/visuals/leaderboard.md
+  dashboard: outputs/visuals/dashboard.html
+  summary_out: outputs/visuals/release_summary.md
