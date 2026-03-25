@@ -3,6 +3,15 @@
 Engineering-first Vision-Language-Action (VLA) starter repository for embodied AI.  
 This project connects instruction understanding, multimodal observation encoding, policy inference, and action interface abstraction in a decoupled pipeline.
 
+## Status Snapshot
+
+- CI: passing (`.github/workflows/ci.yml`)
+- Test suite: `15 passed`
+- Lightweight CALVIN benchmark:
+  - step accuracy: `1.0000`
+  - sequence success: `1.0000`
+  - mean confidence: `0.9850`
+
 ## Project Positioning
 
 `generalist-vla-agent` is a practical baseline for teams building generalist embodied agents.  
@@ -55,18 +64,21 @@ evaluation hooks
 
 ```text
 generalist-vla-agent/
-├─ src/generalist_vla_agent/
-│  ├─ agent/
-│  ├─ perception/
-│  ├─ policy/
-│  ├─ actions/
-│  ├─ eval/
-│  └─ utils/
-├─ configs/
-├─ scripts/
-├─ tests/
-├─ docs/
-└─ .github/
+|- src/generalist_vla_agent/
+|  |- agent/
+|  |- perception/
+|  |- policy/
+|  |- actions/
+|  |- eval/
+|  |- data/
+|  |- training/
+|  |- visualization/
+|  `- utils/
+|- configs/
+|- scripts/
+|- tests/
+|- docs/
+`- .github/
 ```
 
 ## Quickstart
@@ -234,6 +246,7 @@ Visualization details: [docs/visualization.md](docs/visualization.md).
 CALVIN download notes: [docs/calvin_download.md](docs/calvin_download.md).
 CALVIN integration: [docs/calvin_integration.md](docs/calvin_integration.md).
 Config lock/restore: [docs/config_lock.md](docs/config_lock.md).
+Issue seeding guide: [docs/github_issue_seeds.md](docs/github_issue_seeds.md).
 
 ## GitHub Metadata
 
