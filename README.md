@@ -247,6 +247,7 @@ CALVIN download notes: [docs/calvin_download.md](docs/calvin_download.md).
 CALVIN integration: [docs/calvin_integration.md](docs/calvin_integration.md).
 Config lock/restore: [docs/config_lock.md](docs/config_lock.md).
 Issue seeding guide: [docs/github_issue_seeds.md](docs/github_issue_seeds.md).
+Issue automation guide: [docs/github_issue_automation.md](docs/github_issue_automation.md).
 
 ## GitHub Metadata
 
